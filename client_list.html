@@ -8,11 +8,36 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
 </head>
-<body>
+<body class="has-open-popup">
+
+	<div class="overlay js-overlay" style="display: block;">
+		<div class="popup js-popup js-popup-auto">
+			<div class="popup__logo"><span>ST</span></div>
+				<div class="popup__content">
+					<div class="popup__title">АВТОРИЗАЦИЯ</div>
+					<div class="popup__row">
+						<div class="popup__tooltip">неверный формат e-mail</div>
+						<input type="text" class="popup__input input" placeholder="e-mail">
+					</div>
+					<div class="popup__row">
+						<input type="text" class="popup__input input" placeholder="пароль">
+					</div>
+					<div class="popup__row align-center">
+						<label class="checkbox">
+							<input type="checkbox" value="">
+							<span><i class="checkbox__ico"></i>запомнить  меня</span>
+						</label>
+					</div>
+					<div class="align-center">
+						<a href="#" class="popup__btn btn btn_ok">готово</a>
+					</div>
+				</div>
+		</div>
+	</div>
+
 	<div class="wrap">
 		<div class="container">
 			<div class="header">
-
 				<div class="user">
 					<a href="@" class="user__enter">
 						<i class="ico i-enter"></i>
@@ -25,6 +50,21 @@
 			</div>
 			<!--/.header-->
 			<div class="topper">
+				<a href="#" class="create-acc js-account"><i class="ico i-plus"></i><span>СОЗДАТЬ АККАУНТ</span></a>
+				<div class="create-account">
+					<div class="create-account__in">
+						<i class="create-account__close js-create-account-close"></i>
+						<div class="create-account__row">
+							<input type="text" class="create-account__input input" placeholder="название">
+						</div>
+						<div class="create-account__row">
+							<input type="text" class="create-account__input input" placeholder="сайт https://www">
+						</div>
+						<div class="create-account__row create-account__row_mod">
+							<a href="#" class="create-account__btn btn btn_succes">готово</a>
+						</div>
+					</div>
+				</div>
 			</div>
 			<!--/.tooper-->
 			<ul class="list">

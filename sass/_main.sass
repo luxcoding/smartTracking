@@ -9,7 +9,21 @@
 /*-----topper-----------------------------------------------------*/
 .topper
 	height: 50px
-	background-color: $block-c
+	line-height: 50px
+	background-color: #2c3e50
+	text-align: center
+	position: relative
+.create-acc
+	color: #fff
+	.ico, span
+		display: inline-block
+		vertical-align: middle
+	.ico
+		margin-bottom: 2px
+		margin-right: 10px
+	span
+		font-size: 15px
+		line-height: 1
 /*-----list-----------------------------------------------------*/
 .list
 	.list__item
@@ -30,14 +44,30 @@
 			height: 100%
 			width: 9px
 			right: 0
-			top: 0 
+			top: 0
+		&:hover	
+			.list__site
+				color: #FFF 
+				font-weight: bold
+			.list__info
+				display: block
+
 	.list__item-active
 		&:after
 			background-color: $active-c 
+		&:hover
+			background-color: $active-c !important 
+			border-color: $active-c 
 	.list__item-develop
+		&:hover
+			background-color: $develop-c !important 
+			border-color: $develop-c 
 		&:after
 			background-color: $develop-c 	
 	.list__item-passive
+		&:hover
+			background-color: $passive-c !important 
+			border-color: $passive-c 
 		&:after
 			background-color: $passive-c 
 	.list__site
@@ -63,21 +93,7 @@
 		+transition
 		&:hover
 			+transform(translateY(-3px))
-	.list-active	
-		.list__site
-			color: #FFF 
-			font-weight: bold
-		.list__info
-			display: block
-	.list-active-act
-		background-color: $active-c !important 
-		border-color: $active-c 
-	.list-active-pas
-		background-color: $passive-c !important 
-		border-color: $passive-c 
-	.list-active-dev
-		background-color: $develop-c !important 
-		border-color: $develop-c 								
+							
 /*-----footer-----------------------------------------------------*/
 .footer
 	background-color: $block-c
@@ -173,12 +189,12 @@
 		padding: 0 6px 
 		a
 			font-size: 30px
-			line-height: 18px
+			line-height: 24px
 	.pager-number
 		a
 			height: 23px
 			width: 23px
-			line-height: 23px
+			// line-height: 23px
 			display: inline-block
 			+border-radius(50%)
 			text-align: center
@@ -187,6 +203,132 @@
 		a		
 			background-color: $btn_act-c
 			color: #FFF 
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
+/*-----create-account-----------------------------------------------------*/
+.create-account
+	height: 184px
+	padding-top: 40px
+	position: absolute
+	top: 100%
+	bottom: 0
+	left: 0
+	right: 0
+	background: #2C3E50
+	background: rgba(#2c3e50, .7)
+	+opacity(0)
+	+transition
+	z-index: -1
+	&.is-open
+		+opacity(1)
+		+transition
+		z-index: 100
+	.create-account__close
+		position: absolute
+		top: 13px
+		right: 45px
+		+s(i-cross)
+		cursor: pointer
+		+transition
+		&:hover
+			+rotate(90)
+			+transition
+	.create-account__row
+		margin-bottom: 15px
+		line-height: 1
+		&.create-account__row_mod
+			margin-top: 40px
+			margin-bottom: 0
+	.create-account__input
+		width: 188px
+	.create-account__btn
+		width: 110px
+/*-----popup-----------------------------------------------------*/
+.has-open-popup
+	overflow: hidden
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #fff
+	background: rgba(#fff, 0.89)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: top
+		width: 0
+		height: 100%
+.popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 75px 0
+	width: 255px
+	.popup__content
+		border-top: 1px solid #d0d5d9
+		background: #34495e
+		font-size: 12px
+		text-align: left
+		overflow: hidden
+		padding: 35px 30px 25px
+	.popup__logo
+		width: 58px
+		height: 58px
+		line-height: 60px
+		margin-top: 14px
+		margin-bottom: 24px
+		display: inline-block
+		border: 1px solid #34495e
+		text-align: center
+		span
+			font-size: 21px
+			font-family: $Myriad
+			text-transform: uppercase
+			color: #34495e
+	.popup__title
+		margin-bottom: 50px
+		font-size: 18px
+		font-weight: bold
+		color: #2FCC71
+		text-transform: uppercase
+		text-align: center
+	.popup__row
+		margin-bottom: 12px
+		position: relative
+	.popup__btn
+		padding: 8px 40px 6px
+	.popup__tooltip
+		width: 144px
+		padding: 4px 0
+		position: absolute
+		top: -30px
+		left: 50%
+		margin-left: -77px
+		background: #85929E
+		+border-radius(3px)
+		font-size: 10px
+		color: #fff
+		text-align: center
+		&:before
+			content: ""
+			display: inline-block
+			+arr(8,4,#85929E,b)
+			position: absolute
+			left: 50%
+			margin-left: -2px
+			bottom: -4px
+	.popup__input
+		width: 179px
+		padding: 2px 7px
+		text-align: left
+		font-size: 10px
+		color: #606060
+		+placeholder
+			font-size: 10px
+			color: #606060
 /*----------------------------------------------------------*/
