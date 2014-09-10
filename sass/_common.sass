@@ -20,6 +20,70 @@ body,a
 		max-width: 677px
 .align-center
 	text-align: center
+	
+.second-nav
+	ul
+		+clr
+	li
+		width: 20%
+		float: left
+		text-align: center
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			left: 35px
+		&.second-nav__call
+			&:before
+				margin-top: -20px
+				+s(nav1)
+				+transition
+			&:hover
+				&:before
+					+sp(nav1_h)
+					+transition
+		&.second-nav__session
+			&:before
+				margin-top: -14px
+				+s(nav2)
+				+transition
+			&:hover
+				&:before
+					+sp(nav2_h)
+					+transition
+		&.second-nav__stat
+			&:before
+				margin-top: -17px
+				+s(nav3)
+				+transition
+			&:hover
+				&:before
+					+sp(nav3_h)
+					+transition
+		&.second-nav__settings
+			&:before
+				margin-top: -17px
+				+s(nav4)
+				+transition
+			&:hover
+				&:before
+					+sp(nav4_h)
+					+transition
+		&.second-nav__user
+			&:before
+	a
+		display: block
+		height: 76px
+		line-height: 76px
+		padding-left: 30px
+		+transition
+		color: #868E96 
+		&:hover
+			background: #2ecc71
+			color: #fff
+			+transition 
+
 
 
 	
