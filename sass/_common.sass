@@ -123,6 +123,45 @@ body,a
 			right: 0
 			+transition
 
+.primaty-nav
+	width: 100%
+	display: table
+	border-spacing: 0px
+	border-bottom: 2px solid #dee1e2
+	ul
+		display: table-row
+	li
+		display: table-cell
+		vertical-align: middle
+		height: 77px
+		background: #ECF0F1
+	a, span
+		display: block
+		padding-left: 40px
+		padding-right: 40px
+	a
+		position: relative
+		&:before
+			content: ""
+			+s(i-arr)
+			position: absolute
+			top: 50%
+			margin-top: -3px
+			right: 20px
+	span
+		text-align: right
+		.ico
+			margin-left: 8px
+			cursor: pointer
+			+transition
+			&:first-child
+				margin-left: 0
+			&:hover
+				+transition
+				+opacity(0.6)
+
+
+
 
 
 	

@@ -331,4 +331,93 @@
 		+placeholder
 			font-size: 10px
 			color: #606060
+/*-----player-----------------------------------------------------*/
+.player-bg
+	padding: 20px 35px
+	background: #ECF0F1
+	border-bottom: 1px solid #dee1e2 
+	.player
+		height: 47px
+		font-size: 0
+	.player__btn
+		display: inline-block
+		vertical-align: middle
+		width: 47px
+		height: 47px
+		line-height: 47px
+		background: #2C3E50 
+		text-align: center
+		cursor: pointer
+		+transition
+		&:hover
+			+transition
+			+opacity(0.7)
+		.player__btn-pause, .player__btn-play
+			display: inline-block
+			vertical-align: middle
+		.player__btn-pause
+			+s(i-pause)
+		.player__btn-play
+			margin-left: 3px
+			+arr(12,10, #fff, r)
+	.player__in
+		display: inline-block
+		vertical-align: middle
+		width: 827px
+		line-height: 47px
+		padding: 0 16px 0 50px
+		height: 100%
+		background: #2ECC71
+		font-size: 14px
+		font-size: 0
+	.player__track
+		width: 680px
+		height: 6px
+		display: inline-block
+		vertical-align: middle
+		background: #FFF
+		border-radius: 3px
+		position: relative
+		overflow: hidden
+		.player__track-min
+			height: 6px
+			position: absolute
+			top: 0
+			left: 0
+			background: #9F9F9F 
+		.player__track-point
+			display: inline-block
+			width: 6px
+			height: 6px
+			border-radius: 3px
+			background: #2c3e50
+			position: absolute
+			right: 0
+			top: 0
+			margin-right: -3px
+			cursor: pointer
+	.player__meta
+		width: 147px
+		display: inline-block
+		vertical-align: middle
+		font-size: 17px
+		text-align: right
+		font-weight: bold
+		color: #FFF 
+	.player__time
+		display: inline-block
+		vertical-align: middle
+	.player__mute
+		margin-left: 13px
+		margin-bottom: 3px
+		display: inline-block
+		vertical-align: middle
+		+s(i-mute)
+		cursor: pointer
+		+transition
+		&:hover
+			+transition
+			+opacity(0.8)
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
 /*----------------------------------------------------------*/
