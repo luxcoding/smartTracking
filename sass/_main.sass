@@ -1,0 +1,192 @@
+/*-----header-----------------------------------------------------*/
+.header
+	padding: 30px 40px 15px 
+	border-bottom: 1px solid #D4D8D8 
+	+clr
+	+box
+	.logo
+		margin-top: 5px	
+/*-----topper-----------------------------------------------------*/
+.topper
+	height: 50px
+	background-color: $block-c
+/*-----list-----------------------------------------------------*/
+.list
+	.list__item
+		position: relative
+		text-align: center
+		height: 55px
+		line-height: 55px
+		border-bottom: 1px solid #d1d5d5
+		+clr
+		&:nth-child(2n+1)
+			background-color: #fbfbfc 
+		&:after
+			background-color: $active-c 		
+	.list__item-develop, .list__item-passive, .list__item-active
+		&:after	
+			position: absolute
+			content: ""
+			height: 100%
+			width: 9px
+			right: 0
+			top: 0 
+	.list__item-active
+		&:after
+			background-color: $active-c 
+	.list__item-develop
+		&:after
+			background-color: $develop-c 	
+	.list__item-passive
+		&:after
+			background-color: $passive-c 
+	.list__site
+		text-transform: uppercase		
+		color: #a7acb2
+		font-size: 15px
+		display: block
+		width: 200px
+		margin: 0 auto 
+	.list__info
+		float: right
+		display: none
+	.list__info-status
+		float: right
+		width: 90px
+		text-align: left
+		color: #FFF 
+		font-weight: bold
+		font-size: 12px
+	.list__info-icon
+		float: right	
+		margin-right: 24px	
+		+transition
+		&:hover
+			+transform(translateY(-3px))
+	.list-active	
+		.list__site
+			color: #FFF 
+			font-weight: bold
+		.list__info
+			display: block
+	.list-active-act
+		background-color: $active-c !important 
+		border-color: $active-c 
+	.list-active-pas
+		background-color: $passive-c !important 
+		border-color: $passive-c 
+	.list-active-dev
+		background-color: $develop-c !important 
+		border-color: $develop-c 								
+/*-----footer-----------------------------------------------------*/
+.footer
+	background-color: $block-c
+	text-align: center 
+	padding: 25px 0 40px 
+/*----------------------------------------------------------*/ 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+
+
+
+
+
+
+/*-----logo-----------------------------------------------------*/
+.logo
+	float: left
+	font-size: 22px
+	line-height: 22px
+	color: #2C3E50
+	text-transform: uppercase 
+/*-----user-----------------------------------------------------*/
+.user
+	float: right
+	.i-user
+		float: right
+		margin-right: 10px
+		margin-top: 10px
+	.user__mail
+		float: right
+		color: #A9ADB3
+		margin-right: 10px
+		font-size: 13px
+		margin-top: 10px
+		+transition
+		&:hover
+			color: darken(#A9ADB3, 30%) 
+	.user__enter
+		float: right
+		border: 2px solid #CDD1D7
+		height: 40px
+		width: 40px
+		line-height: 40px
+		text-align: center 
+		position: relative
+		+border-radius(20px)
+		+box
+		+transition
+		&:hover
+			background-color: $btn_act-c
+			.user__popup
+				display: block
+		&:active
+			+transform(scale(0.9)) 	 
+		.ico
+			vertical-align: -3px 
+	.user__popup
+		position: absolute
+		top: -24px
+		left: 50%
+		background-color: #2C3E50
+		color: #fff
+		font-size: 12px
+		line-height: 12px
+		width: 60px
+		margin-left: -30px
+		text-align: center
+		padding: 5px 0 
+		display: none
+		+border-radius(3px)  
+		&:after
+			position: absolute
+			left: 50%
+			margin-left: -4px
+			bottom: -4px 
+			content: ""
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 4px 4px 0 4px
+			border-color: #2C3E50 transparent transparent transparent 		
+/*-----pager-----------------------------------------------------*/
+.pager
+	display: inline-block
+	+clr
+	li
+		float: left
+		padding: 0 3px 
+	a
+		font-size: 18px
+		line-height: 26px
+	.pager-nav
+		padding: 0 6px 
+		a
+			font-size: 30px
+			line-height: 18px
+	.pager-number
+		a
+			height: 23px
+			width: 23px
+			line-height: 23px
+			display: inline-block
+			+border-radius(50%)
+			text-align: center
+			padding: 0	
+	.is-active	
+		a		
+			background-color: $btn_act-c
+			color: #FFF 
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
+/*----------------------------------------------------------*/
