@@ -67,6 +67,8 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e9
 .wrap { width: 100%; min-width: 320px; min-height: 100%; background-color: #5f92c1; background-image: url('../img/bg.jpg?1410305692'); padding-top: 75px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .container { margin: 0 auto; max-width: 1010px; background-color: white; -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); }
+@media only screen and (max-width: 800px) { .container { max-width: 677px; } }
+@media only screen and (max-width: 800px) { .container { max-width: 677px; } }
 
 .align-center { text-align: center; }
 
