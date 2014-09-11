@@ -335,16 +335,20 @@
 .player-bg
 	padding: 20px 35px
 	background: #ECF0F1
-	border-bottom: 1px solid #dee1e2 
+	border-bottom: 1px solid #dee1e2
+	+r(w960)
+		padding: 13px 15px
 	.player
 		height: 47px
 		font-size: 0
+		position: relative
 	.player__btn
 		display: inline-block
 		vertical-align: middle
 		width: 47px
 		height: 47px
 		line-height: 47px
+		border-right: 1px solid #5b817c
 		background: #2C3E50 
 		text-align: center
 		cursor: pointer
@@ -363,15 +367,23 @@
 	.player__in
 		display: inline-block
 		vertical-align: middle
-		width: 827px
+		
+		position: absolute
+		top: 0
+		left: 48px
+		right: 0px
+		// width: 826px
+		
 		line-height: 47px
 		padding: 0 16px 0 50px
 		height: 100%
 		background: #2ECC71
 		font-size: 14px
 		font-size: 0
+		+r(w960)
+			padding: 0 10px 0 12px
 	.player__track
-		width: 680px
+		// width: 680px
 		height: 6px
 		display: inline-block
 		vertical-align: middle
@@ -379,12 +391,20 @@
 		border-radius: 3px
 		position: relative
 		overflow: hidden
+
+		position: absolute
+		top: 50%
+		left: 50px
+		right: 146px
+		margin-top: -3px
+		+r(w960)
+			left: 12px
 		.player__track-min
 			height: 6px
 			position: absolute
 			top: 0
 			left: 0
-			background: #9F9F9F 
+			background: #9F9F9F
 		.player__track-point
 			display: inline-block
 			width: 6px
@@ -397,13 +417,19 @@
 			margin-right: -3px
 			cursor: pointer
 	.player__meta
-		width: 147px
+		width: 146px
 		display: inline-block
 		vertical-align: middle
 		font-size: 17px
 		text-align: right
 		font-weight: bold
-		color: #FFF 
+		color: #FFF
+		
+		position: absolute
+		top: 0
+		right: 20px
+		+r(w960)
+			right: 12px
 	.player__time
 		display: inline-block
 		vertical-align: middle

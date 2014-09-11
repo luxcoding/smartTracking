@@ -66,6 +66,8 @@ a { text-decoration: none; }
 
 body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e96; }
 
+body { min-width: 677px; }
+
 .wrap { width: 100%; min-width: 320px; min-height: 100%; background-color: #5f92c1; background-image: url('../img/bg.jpg?1410305692'); padding-top: 75px; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 
 .container { margin: 0 auto; max-width: 1010px; background-color: white; -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); box-shadow: 0 4px 5px rgba(0, 0, 0, 0.25), 0 0 10px rgba(0, 0, 0, 0.2); }
@@ -78,6 +80,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e9
 .second-nav ul:after { content: " "; display: table; clear: both; }
 .second-nav li { width: 20%; float: left; text-align: center; position: relative; }
 .second-nav li:before { content: ""; position: absolute; top: 50%; left: 35px; }
+@media only screen and (max-width: 960px) { .second-nav li:before { left: 15px; } }
 .second-nav li.second-nav__call:before { margin-top: -20px; background: url('../img/icons-s7210daefdf.png') 0 -95px no-repeat; width: 33px; height: 39px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav li.second-nav__call:hover:before { background-position: 0 -189px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav li.second-nav__session:before { margin-top: -14px; background: url('../img/icons-s7210daefdf.png') 0 -328px no-repeat; width: 31px; height: 28px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
@@ -91,6 +94,8 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e9
 .second-nav li.second-nav__user span { position: relative; }
 .second-nav li.second-nav__user .second-nav__user-ico { position: absolute; top: 4px; right: -30px; background: url('../img/icons-s7210daefdf.png') 0 -511px no-repeat; width: 12px; height: 7px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav a { display: block; height: 76px; line-height: 76px; padding-left: 30px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; color: #868e96; }
+@media only screen and (max-width: 800px) { .second-nav a { padding-left: 50px; } }
+@media only screen and (max-width: 800px) { .second-nav a { padding-left: 50px; } }
 .second-nav a:hover { background: #2ecc71; color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav a:hover:before { background: #29b765; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav a:hover:after { background: #2ecc71; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
@@ -105,6 +110,7 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e9
 .primaty-nav > ul > li:hover > a:before { background: url('../img/icons-s7210daefdf.png') 0 -528px no-repeat; width: 12px; height: 7px; }
 .primaty-nav > ul > li:hover .subnav { display: block; }
 .primaty-nav > ul > li.primaty-nav__btn:hover { background: #ecf0f1; }
+.primaty-nav > ul > li.primaty-nav__btn span { padding-left: 0; padding-right: 13px; }
 .primaty-nav > ul > li > a, .primaty-nav > ul > li span { display: block; padding-left: 40px; padding-right: 40px; }
 .primaty-nav > ul > li > a { position: relative; }
 .primaty-nav > ul > li > a:before { content: ""; background: url('../img/icons-s7210daefdf.png') 0 -511px no-repeat; width: 12px; height: 7px; position: absolute; top: 50%; margin-top: -3px; right: 20px; }
@@ -222,17 +228,21 @@ body, a { font-family: "Myriad Pro", Helvetica, Arial, sans-serif; color: #868e9
 
 /*-----player----------------------------------------------------- */
 .player-bg { padding: 20px 35px; background: #ecf0f1; border-bottom: 1px solid #dee1e2; }
-.player-bg .player { height: 47px; font-size: 0; }
-.player-bg .player__btn { display: inline-block; vertical-align: middle; width: 47px; height: 47px; line-height: 47px; background: #2c3e50; text-align: center; cursor: pointer; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+@media only screen and (max-width: 960px) { .player-bg { padding: 13px 15px; } }
+.player-bg .player { height: 47px; font-size: 0; position: relative; }
+.player-bg .player__btn { display: inline-block; vertical-align: middle; width: 47px; height: 47px; line-height: 47px; border-right: 1px solid #5b817c; background: #2c3e50; text-align: center; cursor: pointer; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .player-bg .player__btn:hover { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70); opacity: 0.7; }
 .player-bg .player__btn .player__btn-pause, .player-bg .player__btn .player__btn-play { display: inline-block; vertical-align: middle; }
 .player-bg .player__btn .player__btn-pause { background: url('../img/icons-s7210daefdf.png') 0 -593px no-repeat; width: 13px; height: 14px; }
 .player-bg .player__btn .player__btn-play { margin-left: 3px; width: 0px; height: 0px; border-style: solid; border-width: 5px 0 5px 12px; border-color: transparent transparent transparent white; }
-.player-bg .player__in { display: inline-block; vertical-align: middle; width: 827px; line-height: 47px; padding: 0 16px 0 50px; height: 100%; background: #2ecc71; font-size: 14px; font-size: 0; }
-.player-bg .player__track { width: 680px; height: 6px; display: inline-block; vertical-align: middle; background: white; border-radius: 3px; position: relative; overflow: hidden; }
+.player-bg .player__in { display: inline-block; vertical-align: middle; position: absolute; top: 0; left: 48px; right: 0px; line-height: 47px; padding: 0 16px 0 50px; height: 100%; background: #2ecc71; font-size: 14px; font-size: 0; }
+@media only screen and (max-width: 960px) { .player-bg .player__in { padding: 0 10px 0 12px; } }
+.player-bg .player__track { height: 6px; display: inline-block; vertical-align: middle; background: white; border-radius: 3px; position: relative; overflow: hidden; position: absolute; top: 50%; left: 50px; right: 146px; margin-top: -3px; }
+@media only screen and (max-width: 960px) { .player-bg .player__track { left: 12px; } }
 .player-bg .player__track .player__track-min { height: 6px; position: absolute; top: 0; left: 0; background: #9f9f9f; }
 .player-bg .player__track .player__track-point { display: inline-block; width: 6px; height: 6px; border-radius: 3px; background: #2c3e50; position: absolute; right: 0; top: 0; margin-right: -3px; cursor: pointer; }
-.player-bg .player__meta { width: 147px; display: inline-block; vertical-align: middle; font-size: 17px; text-align: right; font-weight: bold; color: white; }
+.player-bg .player__meta { width: 146px; display: inline-block; vertical-align: middle; font-size: 17px; text-align: right; font-weight: bold; color: white; position: absolute; top: 0; right: 20px; }
+@media only screen and (max-width: 960px) { .player-bg .player__meta { right: 12px; } }
 .player-bg .player__time { display: inline-block; vertical-align: middle; }
 .player-bg .player__mute { margin-left: 13px; margin-bottom: 3px; display: inline-block; vertical-align: middle; background: url('../img/icons-s7210daefdf.png') 0 -404px no-repeat; width: 18px; height: 17px; cursor: pointer; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .player-bg .player__mute:hover { -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80); opacity: 0.8; }
