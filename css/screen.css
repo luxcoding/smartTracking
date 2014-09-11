@@ -102,6 +102,7 @@ body { min-width: 677px; }
 .second-nav li.second-nav__user span { position: relative; }
 .second-nav li.second-nav__user .second-nav__user-ico { position: absolute; top: 4px; right: -30px; background: url('../img/icons-s27e2fd61fa.png') 0 -611px no-repeat; width: 12px; height: 7px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 .second-nav a { display: block; height: 76px; line-height: 76px; padding-left: 30px; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; color: #868e96; }
+@media only screen and (max-width: 960px) { .second-nav a { font-size: 13px; } }
 @media only screen and (max-width: 800px) { .second-nav a { padding-left: 50px; } }
 @media only screen and (max-width: 800px) { .second-nav a { padding-left: 50px; } }
 .second-nav a:hover { background: #2ecc71; color: white; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
