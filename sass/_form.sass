@@ -48,3 +48,58 @@
 	input:checked + span
 		.checkbox__ico
 			+sp(i-checkbox_a)
+
+.select
+	height: 19px
+	line-height: 15px
+	background: #f6f8f9
+	font-size: 14px
+	color: #2c3e50
+	font-weight: bold
+	font-family: $Myriad 
+	cursor: pointer
+	position: relative
+	+box
+	+r(w960)
+		font-size: 12px
+		line-height: 21px
+	span
+		padding: 3px 15px 5px
+		display: block
+		overflow: hidden
+		text-overflow: ellipsis
+		white-space: nowrap
+		+r(w960)
+			padding: 0 5px
+	em
+		font-style: normal
+	i
+		content: ""
+		position: absolute
+		top: 8px
+		right: 10px
+		+s(sell-arr)
+	&.is-open
+		.select__drop
+			display: block
+		i
+			+transform(rotate(180deg))
+	.select__drop
+		display: none
+		position: absolute
+		top: 100%
+		left: 0px
+		width: 100%
+		z-index: 666
+		background: #f6f8f9
+	ul
+		margin: 0
+	li
+		padding: 3px 15px 5px
+		+r(w960)
+			padding: 0 5px
+		&:hover
+			cursor: pointer
+		span
+			padding: 0
+

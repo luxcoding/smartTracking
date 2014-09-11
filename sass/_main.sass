@@ -541,6 +541,9 @@
 			width: 47%
 			margin-left: 6%
 			float: left
+			&.call__input_long
+				input
+					// width: 275px
 			+r(w960)
 				width: 49%
 				margin-left: 2%	
@@ -580,6 +583,7 @@
 		+r(w960)
 			width: 16% 
 			padding-top: 27px
+			padding-right: 20px
 	.call__btn
 		color: #FFF
 		background-color: #2ecc71
@@ -599,6 +603,17 @@
 			line-height: 11px
 			padding: 3px 5px 
 			margin-bottom: 4px
+	.some-wrap
+		+clr
+		.call__btn-wrap
+			width: 20px
+			margin-right: 8px
+			float: left
+		.call__input-wrap
+			height: 21px
+			overflow: hidden
+			input
+				height: 21px
 	.call__action-text
 		font-size: 12px
 		line-height: 12px
@@ -625,10 +640,16 @@
 	.call_roll_mod
 		margin-top: 10px
 		overflow: hidden
+		.call__input-item
+			margin-bottom: 14px
+		textarea
+			height: 90px
+			+r(w960)
+				height: 90px
 	.call__input-item
 		margin-bottom: 10px
 		input
-			width: 249px
+			// width: 249px
 			display: inline-block
 			vertical-align: middle
 	.call__input-item_mod 
@@ -756,6 +777,11 @@
 		display: block
 	.call__text
 		font-size: 13px
+		+r(w960)
+			font-size: 11px
+	.call__text-strong
+		+r(w960)
+			font-size: 12px
 	.readme__wrap
 		// padding: 20px 56px 40px
 		padding-bottom: 40px 
@@ -771,6 +797,8 @@
 		&:hover
 			background: #2ECC71
 			+transition
+		+r(w960)
+			font-size: 11px
 	.readme__save 
 		display: inline-block
 		padding: 3px 25px 1px
@@ -779,6 +807,8 @@
 		font-size: 13px
 		color: #fff
 		+transition
+		+r(w960)
+			font-size: 11px
 		&:hover
 			background: #2ECC71
 			+transition
@@ -789,6 +819,9 @@
 		padding: 10px 10px 10px 55px
 		float: left
 		+box
+		+r(w960)
+			width: 24%
+			padding: 13px 0px 10px 33px
 		.call__info
 			width: 100%
 			float: none
@@ -798,14 +831,18 @@
 		width: 58%
 		padding-top: 10px
 		+box
+		+r(w960)
+			width: 60%
 		.call__user
 			width: 100%
 	.readme__right
 		float: left
 		width: 20%
 		text-align: center
-		padding-top: 26px
+		padding-top: 11px
 		+box
+		+r(w960)
+			width: 16%
 		.call__action
 			width: 100%
 	.readme__prev, .readme__next
@@ -815,6 +852,8 @@
 		bottom: 0
 		background: #919AA4
 		+transition
+		+r(w960)
+			width: 15px
 		&:before
 			content: ""
 			position: absolute
