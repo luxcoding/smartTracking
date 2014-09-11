@@ -519,7 +519,7 @@
 		padding: 10px 10px 10px 55px 
 		float: left
 		width: 22%	
-		+box	
+		+box
 		+r(w960)
 			padding: 13px 0px 10px 33px 
 			width: 24%
@@ -536,7 +536,7 @@
 			padding: 0px 15px
 			+box
 			+r(w960)
-			padding: 0 5px
+				padding: 0 5px
 		.call__input
 			width: 47%
 			margin-left: 6%
@@ -546,6 +546,11 @@
 				margin-left: 2%	
 			&:first-child
 				margin-left: 0
+		.call__input-btn
+			margin-right: 3px
+			+s(wtf)
+			display: inline-block
+			vertical-align: middle
 		input, textarea
 			background-color: #f6f8f9
 			width: 100% 
@@ -617,6 +622,18 @@
 			border-style: solid
 			border-width: 5px 5px 0 5px
 			border-color: #485564 transparent transparent transparent
+	.call_roll_mod
+		margin-top: 10px
+		overflow: hidden
+	.call__input-item
+		margin-bottom: 10px
+		input
+			width: 249px
+			display: inline-block
+			vertical-align: middle
+	.call__input-item_mod 
+		margin-top: 25px
+	
 /*-----period-----------------------------------------------------*/
 .period
 	font-size: 0
@@ -732,3 +749,92 @@
 	.choice-tel__list
 		margin-bottom: 10px
 		margin-top: 7px
+
+.readme
+	border-bottom: 1px solid #dee1e2
+	textarea
+		display: block
+	.call__text
+		font-size: 13px
+	.readme__wrap
+		// padding: 20px 56px 40px
+		padding-bottom: 40px 
+		position: relative
+	.readme__more
+		display: inline-block
+		padding: 3px 25px 1px
+		background: #8F99A2 
+		border-left: 1px solid #dbeee5
+		font-size: 13px
+		color: #fff
+		+transition
+		&:hover
+			background: #2ECC71
+			+transition
+	.readme__save 
+		display: inline-block
+		padding: 3px 25px 1px
+		background: #5d6b78
+		border-left: 1px solid #dbeee5
+		font-size: 13px
+		color: #fff
+		+transition
+		&:hover
+			background: #2ECC71
+			+transition
+	.readme__in
+		+clr
+	.readme__left
+		width: 22%
+		padding: 10px 10px 10px 55px
+		float: left
+		+box
+		.call__info
+			width: 100%
+			float: none
+			padding: 0
+	.readme__center
+		float: left
+		width: 58%
+		padding-top: 10px
+		+box
+		.call__user
+			width: 100%
+	.readme__right
+		float: left
+		width: 20%
+		text-align: center
+		padding-top: 26px
+		+box
+		.call__action
+			width: 100%
+	.readme__prev, .readme__next
+		width: 18px
+		position: absolute
+		top: 0
+		bottom: 0
+		background: #919AA4
+		+transition
+		&:before
+			content: ""
+			position: absolute
+			top: 50%
+			margin-top: -6px
+			left: 50%
+			margin-left: -3px
+		&:hover
+			background: #2ecc71
+			+transition 
+	.readme__prev
+		left: 0
+		&:before
+			+s(i-left)
+	.readme__next
+		right: 0
+		&:before
+			+s(i-right)
+
+
+
+
+
