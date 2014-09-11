@@ -654,6 +654,7 @@
 	.period__apply
 		display: inline-block
 		vertical-align: middle
+		width: auto
 		height: auto
 		padding: 0
 		font-size: 14px
@@ -666,6 +667,68 @@
 			background: transparent
 			text-decoration: none
 			color: #6D7B86
-	
-
-/*----------------------------------------------------------*/
+/*-----choice-tel-----------------------------------------------------*/
+.choice-tel
+	.choice-tel__meta
+		margin-bottom: 5px
+		+clr
+	.choice-tel__meta1
+		float: left
+		a
+			height: auto
+			line-height: 1.4 
+			padding: 0
+			font-size: 13px
+			color: rgba(#2c3e50, .71)
+			text-decoration: underline
+			+r(w960)
+				font-size: 10px
+			&:hover
+				background: transparent
+				text-decoration: none
+	.choice-tel__meta2
+		float: right
+		a
+			height: auto
+			line-height: 1.4
+			padding: 0
+			font-size: 13px
+			font-weight: bold
+			color: rgba(#2c3e50, .71)
+			text-decoration: underline
+			+r(w960)
+				font-size: 10px
+			&:hover
+				background: transparent
+				text-decoration: none
+	.choice-tel__divider
+		margin: 0 -25px 8px
+		padding: 7px 10px 5px
+		background: #E9EBED
+		color: rgba(#2c3e50, .71)
+		font-size: 15px
+		font-weight: bold
+		text-align: center
+		+r(w960)
+			margin: 0 -15px 8px
+		a
+			height: auto
+			line-height: 1.4
+			padding: 0
+			color: rgba(#2c3e50, .71)
+			+r(w960)
+				font-size: 10px
+			&:hover
+				background: transparent
+				color: rgba(#2c3e50, .71)
+	.checkbox_mod
+		color: rgba(#2c3e50, .71)
+		+r(w960)
+			margin-bottom: 3px
+		span
+			color: rgba(#2c3e50, .71)
+			+r(w960)
+				font-size: 11px
+	.choice-tel__list
+		margin-bottom: 10px
+		margin-top: 7px

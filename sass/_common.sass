@@ -152,6 +152,8 @@ body
 				.subnav 
 					display: block
 			&.primaty-nav__btn
+				+r(w960)
+					width: 140px
 				&:hover
 					background: #ECF0F1
 				span
@@ -163,6 +165,8 @@ body
 				padding-right: 40px
 			& > a
 				position: relative
+				+r(w960)
+					font-size: 12px
 				&:before
 					content: ""
 					+s(i-arr)
@@ -173,7 +177,6 @@ body
 			& > span
 				text-align: right
 				.ico
-					margin-left: 8px
 					cursor: pointer
 					+transition
 					&:first-child
@@ -191,9 +194,35 @@ body
 	right: 0
 	z-index: 2000
 	// margin-top: 2px
-	padding-top: 2px
 	margin-bottom: 100px
+	&.subnav_mod
+		li
+			padding: 15px 25px 30px
+			+r(w960)
+				padding: 15px 15px 30px
+			&:hover
+				border-left: 1px solid #dee1e2
+				border-right: 1px solid #dee1e2
+	.subnav__ok
+		display: block
+		margin: 15px auto 0px
+		background: transparent 
+		font-size: 13px
+		color: #6D7B86
+		font-weight: bold
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+		&.subnav__ok_sexy
+			+r(w960)
+				padding: 2px 5px
+				background: #27ae60
+				font-size: 11px
+				font-weight: bold
+				color: #fff 
+				text-decoration: none
 	li
+		padding: 0
 		background: #fff
 		border-bottom: 1px solid #dee1e2
 		border-left: 1px solid #dee1e2
@@ -211,14 +240,24 @@ body
 				border-right: 1px solid #dee1e2
 		&.subnav__item_mod
 			a
-				height: 35px
-				padding: 10px 40px
-				line-height: 1.2
+				// height: 35px
+				// padding: 10px 40px
+				// line-height: 1.2
 	a
-		display: block
-		height: 55px
-		line-height: 55px
-		padding: 0 40px
+		// display: block
+		// height: 55px
+		// line-height: 55px
+		// padding: 0 40px
+		
+		display: inline-block
+		width: 100%
+		
+		padding: 18px 40px
+		line-height: 1
+		vertical-align: middle
+		+box
+		+r(w960)
+			font-size: 11px
 		&:hover
 			background: #BFC5CA
 			color: #2C3E50 
