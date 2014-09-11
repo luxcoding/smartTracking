@@ -418,6 +418,228 @@
 		&:hover
 			+transition
 			+opacity(0.8)
-/*----------------------------------------------------------*/
-/*----------------------------------------------------------*/
+/*-----call-----------------------------------------------------*/
+.call
+	.call__item
+		min-height: 185px
+		border-bottom: 1px solid #f4f5f5
+		font-size: 13px
+		line-height: 16px
+		color: #808790
+		position: relative   
+		+clr
+		+r(w960)
+			font-size: 11px
+			min-height: 160px 
+			line-height: 14px
+	.call__text-date
+		margin-bottom: 5px
+		white-space: nowrap
+		+r(w960)
+			margin-bottom: 0
+	.call__text-strong
+		font-weight: bold
+		margin-bottom: 5px
+		color: #485564 
+		font-size: 14px	
+		+r(w960)
+			font-size: 12px
+	.call__status
+		min-height: 185px
+		position: absolute
+		width: 18px
+		top: 0
+		left: 0
+		+r(w960)
+			width: 15px
+			min-height: 160px 
+	.call__status-in	
+		color: #FFF 
+		font-size: 13px
+		line-height: 13px
+		font-weight: bold
+		white-space: nowrap
+		position: absolute
+		top: 0px
+		left: 0px
+		+transform(rotate(-90deg))
+		+r(w960)
+			font-size: 11px
+	.call__status-nofile
+		background-color: $passive-c
+		.call__status-in 	
+			left: -23px
+			top: 82px
+			+r(w960)
+				left: -20px
+				top: 70px
+	.call__status-listened	
+		background-color: $active_page-c
+		.call__status-in 	
+			left: -26px
+			top: 86px
+			+r(w960)
+				left: -22px	
+				top: 74px 		
+	.call__status-unlistened	
+		background-color: #5d6b78
+		.call__status-in 	
+			left: -35px
+			top: 86px
+			+r(w960)
+				left: -30px	
+				top: 74px									
+	.call__info
+		padding: 10px 10px 10px 55px 
+		float: left
+		width: 22%	
+		+box	
+		+r(w960)
+			padding: 13px 0px 10px 33px 
+			width: 24%
+	.call__user
+		float: left
+		width: 58%
+		padding-top: 10px
+		+box
+		+clr
+		+r(w960)
+			padding-top: 13px
+			width: 60%
+		.call__text
+			padding: 0px 15px
+			+box
+			+r(w960)
+			padding: 0 5px
+		.call__input
+			width: 47%
+			margin-left: 6%
+			float: left
+			+r(w960)
+				width: 49%
+				margin-left: 2%	
+			&:first-child
+				margin-left: 0
+		input, textarea
+			background-color: #f6f8f9
+			width: 100% 
+			border: none
+			padding: 3px 15px 5px
+			+box
+			+r(w960)
+				padding: 1px 5px 1px
+		input
+			+placeholder
+				font-weight: bold	
+				color: #485564 
+				font-size: 14px
+				+r(w960)
+					font-size: 12px
+		textarea
+			resize: none	
+			height: 90px
+			+r(w960)
+				height: 55px	
+	.call__action
+		float: left
+		width: 20%
+		text-align: center	
+		padding-top: 26px
+		+box
+		+r(w960)
+			width: 16% 
+			padding-top: 27px
+	.call__btn
+		color: #FFF
+		background-color: #2ecc71
+		display: inline-block
+		font-size: 12px
+		font-weight: bold
+		line-height: 12px
+		padding: 5px 15px
+		margin-bottom: 5px
+		+transition
+		&:hover
+			background-color: lighten(#2ecc71, 20%)
+		&:active
+			+transform(scale(0.9))
+		+r(w960)
+			font-size: 11px	
+			line-height: 11px
+			padding: 3px 5px 
+			margin-bottom: 4px
+	.call__action-text
+		font-size: 12px
+		line-height: 12px
+		font-weight: bold	
+		color: #485564
+		+r(w960)
+			font-size: 11px	
+			line-height: 11px		
+	.call__action-link
+		text-decoration: underline
+		position: relative
+		&:hover
+			text-decoration: none	
+		&:after
+			position: absolute
+			content: ""
+			top: 4px
+			right: -16px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 5px 5px 0 5px
+			border-color: #485564 transparent transparent transparent
+/*-----period-----------------------------------------------------*/
+.period
+	font-size: 0
+	.period__meta
+		width: 170px
+		display: inline-block
+		vertical-align: middle
+		font-size: 15px
+	.period__row
+		width: 295px
+		display: inline-block
+		vertical-align: middle
+		.period__row-label
+			font-size: 12px
+			display: inline-block
+			margin-right: 5px
+			span
+				margin-right: 5px
+				padding: 0
+				display: inline-block
+				vertical-align: middle
+	.period__input
+		display: inline-block
+		vertical-align: middle
+		width: 102px
+		height: 23px
+		padding: 0
+		border: none
+		background: #F6F8F9
+		font-size: 13px
+		font-weight: bold
+		+placeholder
+			font-size: 13px
+			font-weight: bold
+	.period__apply
+		display: inline-block
+		vertical-align: middle
+		height: auto
+		padding: 0
+		font-size: 14px
+		line-height: 1.2
+		text-align: center
+		color: #6D7B86
+		text-decoration: underline
+		font-weight: bold
+		&:hover
+			background: transparent
+			text-decoration: none
+			color: #6D7B86
+	
+
 /*----------------------------------------------------------*/

@@ -14,7 +14,7 @@
 		<div class="container">
 			<div class="header">
 				<div class="user">
-					<a href="@" class="user__enter">
+					<a href="#" class="user__enter">
 						<i class="ico i-enter"></i>
 						<span class="user__popup">выйти</span>
 					</a>
@@ -36,37 +36,251 @@
 			<!-- /.second-nav -->
 			<div class="primaty-nav">
 				<ul>
-					<li><a href="#">Прошлая <br>рабочая неделя</a></li>
+					<li>
+						<a href="#">Прошлая <br>рабочая неделя</a>
+						<div class="subnav">
+							<ul>
+								<li class="subnav__filer">
+									<div class="period">
+										<div class="period__meta">Выбранный пользователем</div>
+										<div class="period__row">
+											<div class="period__row-label">
+												<span>с</span>
+												<input type="text" class="period__input input" value="17.07.2014">
+											</div>
+											<div class="period__row-label">
+												<span>с</span>
+												<input type="text" class="period__input input" value="17.07.2014">
+											</div>
+										</div>
+										<a href="#" class="period__apply">Применить</a>
+									</div>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Сегодня</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Вчера</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Последние 7 дней</a>
+								</li>
+								<li class="subnav__item subnav__item_mod">
+									<a href="#">Прошлая неделя (пн-вс)</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Этот месяц</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Последние 30 дней</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Последний месяц</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">Последние 90 дней</a>
+								</li>
+								<li class="subnav__item">
+									<a href="#">За все время</a>
+								</li>
+							</ul>
+						</div>
+					</li>
 					<li><a href="#">Выбор звонков</a></li>
 					<li><a href="#">Выбор <br>телефонов</a></li>
 					<li><a href="#">Показать 50 строк</a></li>
-					<li>
+					<li class="primaty-nav__btn">
 						<span><i class="ico i-refresh"></i></span>
 					</li>
 				</ul>
 			</div>
 			<!-- /.primaty-nav -->
-			<div class="player-bg">
-				<div class="player">
-					<div class="player__btn">
-						<i class="player__btn-pause"></i>
-						<!-- CHANGE BTN -->
-<!-- 						<i class="player__btn-play"></i> -->
-					</div>
-					<div class="player__in">
-						<div class="player__track">
-							<span class="player__track-min" style="right: 22%;">
-								<span class="player__track-point"></span>
-							</span>
-						</div>
-						<div class="player__meta">
-							<span class="player__time">02:00:00</span>
-							<i class="player__mute"></i>
-						</div>
-					</div>
-				</div>
-			</div>
+
 			<!-- /.player -->
+			<div class="call">
+				<ul class="call__item">
+					<li class="call__status call__status-nofile">
+						<div class="call__status-in">
+							нет файла
+						</div>
+					</li>
+					<li class="call__info">
+						<div class="call__text call__text-date">Дата</div>
+						<div class="call__text call__text-strong">2014.07.10 16:50:13</div>
+						<div class="call__text">Длительность</div>
+						<div class="call__text call__text-strong">0:02:56</div>
+						<div class="call__text">Виртуальный номер</div>
+						<div class="call__text call__text-strong">74952367427</div>
+						<div class="call__text">Абонент</div>
+						<div class="call__text call__text-strong">79104848362</div>
+					</li>
+					<li class="call__user">
+						<div class="call_roll">
+							<div class="call__input">
+								<div class="call__text">Значение</div>
+								<input type="text" placeholder="Целевой звонок">
+							</div>
+							<div class="call__input">
+								<div class="call__text">ФИО</div>
+								<input type="text" placeholder="Петров Александр Васильевич">
+							</div>	
+							<div class="call__roll">
+								<div class="call__text">Комментарий</div>
+								<textarea></textarea>
+							</div>						
+						</div>	
+					</li>
+					<li class="call__action">
+						<a href="#" class="call__btn">прослушать</a>
+						<div class="call__action-text">подробнее</div>
+					</li>
+				</ul>
+				<ul class="call__item">
+					<li class="call__status call__status-listened">
+						<div class="call__status-in">
+							прослушан
+						</div>
+					</li>
+					<li class="call__info">
+						<div class="call__text call__text-date">Дата</div>
+						<div class="call__text call__text-strong">2014.07.10 16:50:13</div>
+						<div class="call__text">Длительность</div>
+						<div class="call__text call__text-strong">0:02:56</div>
+						<div class="call__text">Виртуальный номер</div>
+						<div class="call__text call__text-strong">74952367427</div>
+						<div class="call__text">Абонент</div>
+						<div class="call__text call__text-strong">79104848362</div>
+					</li>
+					<li class="call__user">
+						<div class="call_roll">
+							<div class="call__input">
+								<div class="call__text">Значение</div>
+								<input type="text" placeholder="Целевой звонок">
+							</div>
+							<div class="call__input">
+								<div class="call__text">ФИО</div>
+								<input type="text" placeholder="Петров Александр Васильевич">
+							</div>	
+							<div class="call__roll">
+								<div class="call__text">Комментарий</div>
+								<textarea></textarea>
+							</div>						
+						</div>	
+					</li>
+					<li class="call__action">
+						<a class="call__action-text call__action-link" href="#">прослушать</a>
+					</li>
+				</ul>	
+				<ul class="call__item">
+					<li class="call__status call__status-unlistened">
+						<div class="call__status-in">
+							не прослушан
+						</div>
+					</li>
+					<li class="call__info">
+						<div class="call__text call__text-date">Дата</div>
+						<div class="call__text call__text-strong">2014.07.10 16:50:13</div>
+						<div class="call__text">Длительность</div>
+						<div class="call__text call__text-strong">0:02:56</div>
+						<div class="call__text">Виртуальный номер</div>
+						<div class="call__text call__text-strong">74952367427</div>
+						<div class="call__text">Абонент</div>
+						<div class="call__text call__text-strong">79104848362</div>
+					</li>
+					<li class="call__user">
+						<div class="call_roll">
+							<div class="call__input">
+								<div class="call__text">Значение</div>
+								<input type="text" placeholder="Целевой звонок">
+							</div>
+							<div class="call__input">
+								<div class="call__text">ФИО</div>
+								<input type="text" placeholder="Петров Александр Васильевич">
+							</div>	
+							<div class="call__roll">
+								<div class="call__text">Комментарий</div>
+								<textarea></textarea>
+							</div>						
+						</div>	
+					</li>
+					<li class="call__action">
+						<a class="call__action-text call__action-link" href="#">прослушать</a>
+					</li>
+				</ul>
+				<ul class="call__item">
+					<li class="call__status call__status-listened">
+						<div class="call__status-in">
+							прослушан
+						</div>
+					</li>
+					<li class="call__info">
+						<div class="call__text call__text-date">Дата</div>
+						<div class="call__text call__text-strong">2014.07.10 16:50:13</div>
+						<div class="call__text">Длительность</div>
+						<div class="call__text call__text-strong">0:02:56</div>
+						<div class="call__text">Виртуальный номер</div>
+						<div class="call__text call__text-strong">74952367427</div>
+						<div class="call__text">Абонент</div>
+						<div class="call__text call__text-strong">79104848362</div>
+					</li>
+					<li class="call__user">
+						<div class="call_roll">
+							<div class="call__input">
+								<div class="call__text">Значение</div>
+								<input type="text" placeholder="Целевой звонок">
+							</div>
+							<div class="call__input">
+								<div class="call__text">ФИО</div>
+								<input type="text" placeholder="Петров Александр Васильевич">
+							</div>	
+							<div class="call__roll">
+								<div class="call__text">Комментарий</div>
+								<textarea></textarea>
+							</div>						
+						</div>	
+					</li>
+					<li class="call__action">
+						<a class="call__action-text call__action-link" href="#">прослушать</a>
+					</li>
+				</ul>	
+				<ul class="call__item">
+					<li class="call__status call__status-unlistened">
+						<div class="call__status-in">
+							не прослушан
+						</div>
+					</li>
+					<li class="call__info">
+						<div class="call__text call__text-date">Дата</div>
+						<div class="call__text call__text-strong">2014.07.10 16:50:13</div>
+						<div class="call__text">Длительность</div>
+						<div class="call__text call__text-strong">0:02:56</div>
+						<div class="call__text">Виртуальный номер</div>
+						<div class="call__text call__text-strong">74952367427</div>
+						<div class="call__text">Абонент</div>
+						<div class="call__text call__text-strong">79104848362</div>
+					</li>
+					<li class="call__user">
+						<div class="call_roll">
+							<div class="call__input">
+								<div class="call__text">Значение</div>
+								<input type="text" placeholder="Целевой звонок">
+							</div>
+							<div class="call__input">
+								<div class="call__text">ФИО</div>
+								<input type="text" placeholder="Петров Александр Васильевич">
+							</div>	
+							<div class="call__roll">
+								<div class="call__text">Комментарий</div>
+								<textarea></textarea>
+							</div>						
+						</div>	
+					</li>
+					<li class="call__action">
+						<a class="call__action-text call__action-link" href="#">прослушать</a>
+					</li>
+				</ul>													
+			</div>
+			<!--/.call-->
 			<div class="footer">
 				<ul class="pager">
 					<li class="pager-nav"><a href="#">&#171</a></li>

@@ -121,6 +121,7 @@ body,a
 			bottom: -1px
 			left: 0
 			right: 0
+			z-index: 100
 			+transition
 
 .primaty-nav
@@ -128,37 +129,91 @@ body,a
 	display: table
 	border-spacing: 0px
 	border-bottom: 2px solid #dee1e2
-	ul
+	& > ul
 		display: table-row
-	li
-		display: table-cell
-		vertical-align: middle
-		height: 77px
-		background: #ECF0F1
-	a, span
-		display: block
-		padding-left: 40px
-		padding-right: 40px
-	a
-		position: relative
-		&:before
-			content: ""
-			+s(i-arr)
-			position: absolute
-			top: 50%
-			margin-top: -3px
-			right: 20px
-	span
-		text-align: right
-		.ico
-			margin-left: 8px
-			cursor: pointer
-			+transition
-			&:first-child
-				margin-left: 0
+		& > li
+			display: table-cell
+			vertical-align: middle
+			height: 77px
+			background: #ECF0F1
+			position: relative
 			&:hover
-				+transition
-				+opacity(0.6)
+				background: #b2bac0
+				& > a
+					color: #FFF
+					&:before
+						+s(i-arr_h)
+				.subnav 
+					display: block
+			&.primaty-nav__btn
+				&:hover
+					background: #ECF0F1 
+			& > a, span
+				display: block
+				padding-left: 40px
+				padding-right: 40px
+			& > a
+				position: relative
+				&:before
+					content: ""
+					+s(i-arr)
+					position: absolute
+					top: 50%
+					margin-top: -3px
+					right: 20px
+			& > span
+				text-align: right
+				.ico
+					margin-left: 8px
+					cursor: pointer
+					+transition
+					&:first-child
+						margin-left: 0
+					&:hover
+						+transition
+						+opacity(0.6)
+
+
+.subnav
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	right: 0
+	z-index: 2000
+	// margin-top: 2px
+	padding-top: 2px
+	margin-bottom: 100px
+	li
+		background: #fff
+		border-bottom: 1px solid #dee1e2
+		border-left: 1px solid #dee1e2
+		border-right: 1px solid #dee1e2
+		&:hover
+			border-left-color: #a8b0b6
+			border-right-color: #a8b0b6
+		&:last-child
+			border-radius: 0 0 3px 3px
+		&.subnav__filer
+			width: 560px
+			padding: 10px 35px
+			&:hover
+				border-left: 1px solid #dee1e2
+				border-right: 1px solid #dee1e2
+		&.subnav__item_mod
+			a
+				height: 35px
+				padding: 10px 40px
+				line-height: 1.2
+	a
+		display: block
+		height: 55px
+		line-height: 55px
+		padding: 0 40px
+		&:hover
+			background: #BFC5CA
+			color: #2C3E50 
+
 
 
 
