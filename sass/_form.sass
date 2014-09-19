@@ -29,6 +29,14 @@
 			padding: 0
 			+r(w960)
 				font-size: 11px
+	&.checkbox_mod2
+		input + span
+			.checkbox__ico
+				+s(i-checkbox2)
+		input:checked + span
+			.checkbox__ico
+				+sp(i-checkbox_a2)
+
 	span
 		color: #fff
 		display: inline-block
