@@ -323,7 +323,7 @@ body { min-width: 677px; }
 @media only screen and (max-width: 960px) { .call .call__user .call__input { width: 49%; margin-left: 2%; } }
 .call .call__user .call__input:first-child { margin-left: 0; }
 .call .call__user .call__input-btn { margin-right: 3px; background: url('../img/icons-s6846295f1a.png') 0 -592px no-repeat; width: 19px; height: 21px; display: inline-block; vertical-align: middle; }
-.call .call__user input, .call .call__user textarea { background-color: #f6f8f9; width: 100%; border: none; padding: 4px 15px 4px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.call .call__user input, .call .call__user textarea { background-color: #f6f8f9; width: 100%; border: none; padding: 3px 15px 3px; font-size: 14px; line-height: 14px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 @media only screen and (max-width: 960px) { .call .call__user input, .call .call__user textarea { padding: 1px 5px 1px; } }
 .call .call__user input:-ms-input-placeholder { font-weight: bold; color: #485564; font-size: 14px; }
 @media only screen and (max-width: 960px) { .call .call__user input:-ms-input-placeholder { font-size: 12px; } }
