@@ -41,47 +41,51 @@ body
 			left: 35px
 			+r(w960)
 				left: 15px
+		&:hover
+			a
+				background: #2ecc71
+				color: #fff
 		&.second-nav__call
 			&:before
 				margin-top: -20px
 				+s(nav1)
-				+transition
+				// +transition
 			&:hover
 				&:before
 					+sp(nav1_h)
-					+transition
+					// +transition
 		&.second-nav__session
 			&:before
 				margin-top: -14px
 				+s(nav2)
-				+transition
+				// +transition
 			&:hover
 				&:before
 					+sp(nav2_h)
-					+transition
+					// +transition
 		&.second-nav__stat
 			&:before
 				margin-top: -17px
 				+s(nav3)
-				+transition
+				// +transition
 			&:hover
 				&:before
 					+sp(nav3_h)
-					+transition
+					// +transition
 		&.second-nav__settings
 			&:before
 				margin-top: -17px
 				+s(nav4)
-				+transition
+				// +transition
 			&:hover
 				&:before
 					+sp(nav4_h)
-					+transition
+					// +transition
 		&.second-nav__user
 			&:hover
 				.second-nav__user-ico
 					+s(i-arr_h)
-					+transition
+					// +transition
 			a
 				padding-left: 0
 			span
@@ -91,22 +95,20 @@ body
 				top: 4px
 				right: -30px
 				+s(i-arr)
-				+transition
+				// +transition
 	a
 		display: block
 		height: 76px
 		line-height: 76px
 		padding-left: 30px
-		+transition
+		// +transition
 		color: #868E96
 		+r(w960)
 			font-size: 13px
 		+r(w800)
 			padding-left: 50px
 		&:hover
-			background: #2ecc71
-			color: #fff
-			+transition
+			// +transition
 			&:before
 				background: #29B765
 				+transition
@@ -206,8 +208,8 @@ body
 			+r(w960)
 				padding: 15px 15px 30px
 			&:hover
-				border-left: 1px solid #dee1e2
-				border-right: 1px solid #dee1e2
+				border-left: 2px solid #dee1e2
+				border-right: 2px solid #dee1e2
 	.subnav__ok
 		display: block
 		margin: 15px auto 0px
@@ -229,9 +231,9 @@ body
 	li
 		padding: 0
 		background: #fff
-		border-bottom: 1px solid #dee1e2
-		border-left: 1px solid #dee1e2
-		border-right: 1px solid #dee1e2
+		border-bottom: 2px solid #dee1e2
+		border-left: 2px solid #dee1e2
+		border-right: 2px solid #dee1e2
 		&:hover
 			border-left-color: #a8b0b6
 			border-right-color: #a8b0b6
@@ -241,8 +243,8 @@ body
 			width: 560px
 			padding: 10px 35px
 			&:hover
-				border-left: 1px solid #dee1e2
-				border-right: 1px solid #dee1e2
+				border-left: 2px solid #dee1e2
+				border-right: 2px solid #dee1e2
 		&.subnav__item_mod
 			a
 				// height: 35px
@@ -256,8 +258,7 @@ body
 		
 		display: inline-block
 		width: 100%
-		
-		padding: 18px 40px
+		padding: 12px 40px
 		line-height: 1
 		vertical-align: middle
 		+box

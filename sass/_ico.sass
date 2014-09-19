@@ -17,9 +17,57 @@
 	+s(i-plus)	
 .i-cross
 	+s(i-cross)
+
+
 .i-refresh
-	+s(i-refresh)
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	border: 2px solid #c4cad1
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		+s(i-refresh2)
+		margin-top: -10px
+		margin-left: -11px
+	&:hover
+		background: #2ecc71
+
+
 .i-readme
-	+s(i-readme)
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	border: 2px solid #c4cad1
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		+s(i-readme2)
+		margin-top: -9px
+		margin-left: -9px
+	&:hover
+		background: #2ecc71
+
 .i-exel
-	+s(i-exel)
+	width: 36px
+	height: 36px
+	border-radius: 50%
+	border: 2px solid #c4cad1
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		top: 50%
+		left: 50%
+		+s(i-exel2)
+		margin-top: -8px
+		margin-left: -4px
+	&:hover
+		background: #2ecc71
+	
